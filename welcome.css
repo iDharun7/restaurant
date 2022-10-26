@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: poppins, sans-serif;
+	font-weight: 700;
+	box-sizing: border-box;
+}
+#header{
+	padding: 20px;
+	width: 20%;
+	border-radius: 40px 10px 40px 10px;
+	text-align: center;
+	color: #003FB3 ;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    margin-left: 600px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	background: linear-gradient( -45deg, #FFF, #B38012, #003FB3); 
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+}
+@keyframes gradient{
+
+ 0%   {
+  background-position: 0% 50%;
+ }
+ 50%  {
+    background-position: 100% 50%;
+ }
+ 100% {
+    background-position: 0% 50%;
+ }
+}
+#header #logo{
+	font-style: bold;
+	margin-right: 0px;
+	font-size: 30px;
+}
+#header #logo span{
+	color: #FFBD33;
+}
+
+#header nav{
+	color: #003FB3;
+}
+#header nav a{
+	font-size: 14px;
+	text-decoration: none;
+	padding: 10px;
+	text-align: center;
+	color: #003FB3;
+}
+#header nav a:last-child{
+	color: white;
+	background: #FFBD33;
+	padding: 10px 20px;
+	margin-left: 650px;
+	margin-right: 450px;
+	right: 100px;
+	border-radius: 30px;
+}
+#header nav a:hover{
+	opacity: 0.9;
+}
+#container{
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 20px;
+	height: 640px;
+	background-color: #003FB3;
+}
+#bg-container{
+	width: 50%;
+}
+#content-container{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#content-container h1{
+	color: #FFBD33;
+	font-weight: 900;
+	font-size: 60px;
+	line-height: 0.9em;
+	margin-bottom: 30px;
+}
+#content-container p{
+	line-height: 1.8em;
+	font-weight: 500;
+}
+#content-container button{
+	border:none;
+	outline: none;
+	color: #FFF;
+	background-color: #FFBD33;
+	padding: 15px 5px ;
+	border-radius: 20px 5px 20px 5px;
+	font-size: 15px;
+	margin-top: 30px;
+	cursor: pointer;
+	
+}
+#content-container button:hover{
+	opacity: 0.9;
+}
